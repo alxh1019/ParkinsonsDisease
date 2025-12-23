@@ -8,9 +8,59 @@
 </head>
 <body>
     
-    <h1 style="color: blue;">Vocal Inflections of Parkinson's Disease</h1>
+    <h1 style="color: blue;">Indicators of Parkinson's Disease</h1>
+    
+    <hr style="border: 2px solid #333; margin: 30px 0;">
+
+    <h2>Overall Introduction</h2>
+
+    <p id='main'>
+       Parkinson's disease affects millions worldwide, often going undetected for years before visible motor symptoms appear...
+    </p>
 
     <hr style="border: 2px solid #333; margin: 30px 0;">
 
+    <h2>Data Introduction</h2>
+    
+    <p id='main'>
+        This project integrates multiple datasets to provide a comprehensive view of the indicators of Parkinson's Disease.
+        Below is an overview of the data sources used in our analysis.
+    </p>
+
+    <h3 style="font-size: 18px; margin-top: 20px;">1. Voice Inflections of Parkinson's Patients</h3>
+    <p id='main'>
+        <strong>Source:</strong> 
+        <a href="https://archive.ics.uci.edu/dataset/174/parkinsons.html" target="_blank">UC Irvine Machine Learning Repository</a> 
+        <strong>Description:</strong> Average / Minimum / Maximum Vocal Fundamental Frequency and Percentage of Jitters / Shimmers in Healthy and Parkinson's Patients.
+    </p>
+    <ul>
+        <li><strong>Size:</strong> 195 Voice Recordings</li>
+        <li><strong>Relevant Variables:</strong>MDVP:Fo(Hz), MDVP:Fhi(Hz), MDVP:Flo(Hz), MDVP:Jitter, MDVP:Shimmer, status</li>
+    </ul>
+    
+    <hr style="border: 2px solid #333; margin: 30px 0;">
+
+    <h2>References</h2>  
+    <p id='main'>
+        Little, M. (2007). Parkinsons [Dataset]. UCI Machine Learning Repository. https://doi.org/10.24432/C59C74
+        <a href="https://doi.org/10.24432/C59C74">
+            Income and obesity: what is the direction of the relationship? A systematic review and meta-analysis
+        </a>
+    </p>
+
+    <hr style="border: 2px solid #333; margin: 30px 0;">
+
+    <h2>Visualizations</h2>
+  
+    <h3 style="font-size: 18px; margin-top: 20px;">UCI Biomedical Voice Recordings</h3>
+
+    <iframe 
+        src="frequency_vs_symptoms.html" 
+        width="700" 
+        height="600" 
+        style="border:none;">
+    </iframe>
+
+    
 </body>
 </html>
