@@ -78,8 +78,10 @@
     <h2>Overall Introduction</h2>
 
     <p>
-       Parkinson's disease affects millions worldwide, often going undetected for years before visible motor symptoms appear.
-        In this webpage, data of motor indicators of Parkinson's disease via existing studies compile data visualizations in hopes to guide users in understanding this disease.
+       Parkinson's disease affects millions worldwide, often going undetected for years before visible motor symptoms appear. 
+        In this webpage, a guide to understanding this disease is provided with compiled data visualizations of the vocal indicators and an overall overview 
+        of everyday life with Parkinson's disease via existing studies. I hope to convert complex datasets to a more accessible form with interactive data visualizations 
+        and in turn, enable a better understanding of the indicators of Parkinson's disease.
     </p>
 
     <hr>
@@ -87,8 +89,8 @@
     <h2>Data Introduction</h2>
     
     <p>
-        This project integrates multiple datasets to provide a comprehensive view of the indicators of Parkinson's Disease.
-        Below is an overview of the data sources used in our analysis.
+        This project integrates multiple datasets to provide a more comprehensive view of the indicators of Parkinson's Disease.
+        Below is an overview of the data sources used for the Altair data visualizations:
     </p>
 
     <h3>1. Voice Inflections of Parkinson's Patients</h3>
@@ -101,50 +103,57 @@
     </p>
     <ul>
         <li><strong>Size:</strong> 195 Voice Recordings</li>
-        <li><strong>Relevant Variables:</strong> MDVP:Fo(Hz), MDVP:Fhi(Hz), MDVP:Flo(Hz), MDVP:Jitter, MDVP:Shimmer, status</li>
+        <li><strong>Relevant Variables:</strong> MDVP:Fo(Hz), MDVP:Fhi(Hz), MDVP:Flo(Hz), MDVP:Jitter, MDVP:Shimmer, status
+            <br>    MDVP:Fo(Hz) - Average vocal fundamental frequency
+            <br>    MDVP:Fhi(Hz) - Maximum vocal fundamental frequency
+            <br>    MDVP:Flo(Hz) - Minimum vocal fundamental frequency
+            <br>    MDVP:Jitter - Measure of variation in fundamental frequency
+            <br>    MDVP:Shimmer - Measures of variation in amplitude
+            <br>    status - Health status of the subject; (one) - Parkinson's, (zero) - healthy
+        </li>
     </ul>
 
-    <h3>2. Smartwatch Compiled Data of Parkinson's Patients with Questionnaire</h3>
+    <h3>2. Questionnaire for Parkinson's Patients</h3>
     <p>
         <strong>Source:</strong> 
-        <a href="https://physionet.org/content/parkinsons-disease-smartwatch/1.0.0/movement/#files-panel.html" target="_blank">PADS - Parkinsons Disease Smartwatch dataset</a> 
+        <a href="https://physionet.org/content/parkinsons-disease-smartwatch/1.0.0/movement/#files-panel.html" target="_blank">PADS - Parkinsons Disease Smartwatch / Questionnaire dataset</a> 
     </p>
     <p>
-        <strong>Description:</strong> A Questionnaire 
+        <strong>Description:</strong> Questionnaire for Healthy and Parkinson's Disease based on their Everyday Life.
     </p>
     <ul>
         <li><strong>Size:</strong> 469 Individuals</li>
-        <li><strong>Relevant Variables:</strong> The following questions asked to each individual in True / False format
-            <br> 01 - Dribbling of saliva during the daytime
-            <br> 02 - Loss or change in your ability to taste or smell
-            <br> 03 - Difficulty swallowing food or drink or problems with choking
-            <br> 04 - Vomiting or feelings of sickness (nausea)
-            <br> 05 - Constipation (less than 3 bowel movements a week) or having to strain to pass a stool (faeces)
-            <br> 06 - Bowel (fecal) incontinence
-            <br> 07 - Feeling that your bowel emptying is incomplete after having been to the toilet
-            <br> 08 - A sense of urgency to pass urine makes you rush to the toilet
-            <br> 09 - Getting up regularly at night to pass urine
-            <br> 10 - Unexplained pains (not due to known conditions such as arthritis)
-            <br> 11 - Unexplained change in weight (not due to change in diet)
-            <br> 12 - Problems remembering things that have happened recently or forgetting to do things
-            <br> 13 - Loss of interest in what is happening around you or doing things
-            <br> 14 - Seeing or hearing things that you know or are told are not there
-            <br> 15 - Difficulty concentrating or staying focussed
-            <br> 16 - "Feeling sad, low or blue"
-            <br> 17 - "Feeling anxious, frightened or panicky"
-            <br> 18 - Feeling less interested in sex or more interested in sex
-            <br> 19 - Finding it difficult to have sex when you try
-            <br> 20 - "Feeling light headed, dizzy or weak standing from sitting or lying"
-            <br> 21 - Falling
-            <br> 22 - "Finding it difficult to stay awake during activities such as working, driving or eating"
-            <br> 23 - Difficulty getting to sleep at night or staying asleep at night
-            <br> 24 - "Intense, vivid dreams or frightening dreams"
-            <br> 25 - Talking or moving about in your sleep as if you are acting out a dream
-            <br> 26 - "Unpleasant sensations in your legs at night or while resting, and a feeling that you need to move"
-            <br> 27 - Swelling of your legs
-            <br> 28 - Excessive sweating
-            <br> 29 - Double vision
-            <br> 30 - Believing things are happening to you that other people say are not true
+        <li><strong>Relevant Variables:</strong> The following questions asked to each individual in True / False format:
+            <br>    01 - Dribbling of saliva during the daytime
+            <br>    02 - Loss or change in your ability to taste or smell
+            <br>    03 - Difficulty swallowing food or drink or problems with choking
+            <br>    04 - Vomiting or feelings of sickness (nausea)
+            <br>    05 - Constipation (less than 3 bowel movements a week) or having to strain to pass a stool (faeces)
+            <br>    06 - Bowel (fecal) incontinence
+            <br>    07 - Feeling that your bowel emptying is incomplete after having been to the toilet
+            <br>    08 - A sense of urgency to pass urine makes you rush to the toilet
+            <br>    09 - Getting up regularly at night to pass urine
+            <br>    10 - Unexplained pains (not due to known conditions such as arthritis)
+            <br>    11 - Unexplained change in weight (not due to change in diet)
+            <br>    12 - Problems remembering things that have happened recently or forgetting to do things
+            <br>    13 - Loss of interest in what is happening around you or doing things
+            <br>    14 - Seeing or hearing things that you know or are told are not there
+            <br>    15 - Difficulty concentrating or staying focussed
+            <br>    16 - "Feeling sad, low or blue"
+            <br>    17 - "Feeling anxious, frightened or panicky"
+            <br>    18 - Feeling less interested in sex or more interested in sex
+            <br>    19 - Finding it difficult to have sex when you try
+            <br>    20 - "Feeling light headed, dizzy or weak standing from sitting or lying"
+            <br>    21 - Falling
+            <br>    22 - "Finding it difficult to stay awake during activities such as working, driving or eating"
+            <br>    23 - Difficulty getting to sleep at night or staying asleep at night
+            <br>    24 - "Intense, vivid dreams or frightening dreams"
+            <br>    25 - Talking or moving about in your sleep as if you are acting out a dream
+            <br>    26 - "Unpleasant sensations in your legs at night or while resting, and a feeling that you need to move"
+            <br>    27 - Swelling of your legs
+            <br>    28 - Excessive sweating
+            <br>    29 - Double vision
+            <br>    30 - Believing things are happening to you that other people say are not true
         </li>
     </ul>
 
@@ -156,7 +165,7 @@
 
     <iframe 
         src="audioRecording.html" 
-        width="700" 
+        width="750" 
         height="600">
     </iframe>
 
@@ -164,7 +173,7 @@
 
     <iframe 
         src="questionnaire.html" 
-        width="700" 
+        width="750" 
         height="800">
     </iframe>
 
