@@ -3,38 +3,100 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parkinson's Visualizations</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Parkinson's Visualization Webpage</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            color: #333;
+        }
+        
+        h1 {
+            color: #2c5aa0;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        
+        h3 {
+            color: #2c5aa0;
+            margin-top: 25px;
+        }
+        
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+        
+        ul {
+            margin-bottom: 15px;
+        }
+        
+        li {
+            margin-bottom: 5px;
+        }
+        
+        a {
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        hr {
+            border: none;
+            height: 2px;
+            background-color: #333;
+            margin: 30px 0;
+        }
+        
+        iframe {
+            display: block;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+    </style>
 </head>
 <body>
     
-    <h1 style="color: blue;">Indicators of Parkinson's Disease</h1>
+    <h1>Indicators of Parkinson's Disease</h1>
     
-    <hr style="border: 2px solid #333; margin: 30px 0;">
+    <hr>
 
     <h2>Overall Introduction</h2>
 
-    <p id='main'>
+    <p>
        Parkinson's disease affects millions worldwide, often going undetected for years before visible motor symptoms appear.
         In this webpage, data of motor indicators of Parkinson's disease via existing studies compile data visualizations in hopes to guide users in understanding this disease.
-        
     </p>
 
-    <hr style="border: 2px solid #333; margin: 30px 0;">
+    <hr>
 
     <h2>Data Introduction</h2>
     
-    <p id='main'>
+    <p>
         This project integrates multiple datasets to provide a comprehensive view of the indicators of Parkinson's Disease.
         Below is an overview of the data sources used in our analysis.
     </p>
 
-    <h3 style="font-size: 18px; margin-top: 20px;">1. Voice Inflections of Parkinson's Patients</h3>
-    <p id='main'>
+    <h3>1. Voice Inflections of Parkinson's Patients</h3>
+    <p>
         <strong>Source:</strong> 
         <a href="https://archive.ics.uci.edu/dataset/174/parkinsons.html" target="_blank">UC Irvine Machine Learning Repository</a> 
     </p>
-    <p id='main'>
+    <p>
         <strong>Description:</strong> Average / Minimum / Maximum Vocal Fundamental Frequency and Percentage of Jitters / Shimmers in Healthy and Parkinson's Patients.
     </p>
     <ul>
@@ -42,12 +104,12 @@
         <li><strong>Relevant Variables:</strong> MDVP:Fo(Hz), MDVP:Fhi(Hz), MDVP:Flo(Hz), MDVP:Jitter, MDVP:Shimmer, status</li>
     </ul>
 
-    <h3 style="font-size: 18px; margin-top: 20px;">1. Smartwatch Compiled Data of Parkinson's Patients with Questionnaire</h3>
-    <p id='main'>
+    <h3>2. Smartwatch Compiled Data of Parkinson's Patients with Questionnaire</h3>
+    <p>
         <strong>Source:</strong> 
         <a href="https://physionet.org/content/parkinsons-disease-smartwatch/1.0.0/movement/#files-panel.html" target="_blank">PADS - Parkinsons Disease Smartwatch dataset</a> 
     </p>
-    <p id='main'>
+    <p>
         <strong>Description:</strong> A Questionnaire 
     </p>
     <ul>
@@ -55,35 +117,34 @@
         <li><strong>Relevant Variables:</strong> </li>
     </ul>
 
-    <hr style="border: 2px solid #333; margin: 30px 0;">
+    <hr>
 
     <h2>Visualizations</h2>
   
-    <h3 style="font-size: 18px; margin-top: 20px;">UCI Biomedical Voice Recordings</h3>
+    <h3>UCI Biomedical Voice Recordings</h3>
 
     <iframe 
         src="audioRecording.html" 
         width="700" 
-        height="500" 
-        style="border:none;">
+        height="600">
     </iframe>
 
-    <h3 style="font-size: 18px; margin-top: 20px;">PADS Parkinson's Questionnaire</h3>
+    <h3>PADS Parkinson's Questionnaire</h3>
 
     <iframe 
         src="questionnaire.html" 
         width="700" 
-        height="800" 
-        style="border:none;">
+        height="600">
     </iframe>
 
-    <hr style="border: 2px solid #333; margin: 30px 0;">
+    <hr>
+    
     <h2>References</h2>  
-    <p id='main'>
+    <p>
         Little, M. (2007). Parkinsons [Dataset]. UCI Machine Learning Repository.
         <a href="https://doi.org/10.24432/C59C74">https://doi.org/10.24432/C59C74</a>
     </p>
-    <p id='main'>
+    <p>
         Goldberger, A., Amaral, L., Glass, L., Hausdorff, J., Ivanov, P. C., Mark, R., ... & Stanley, H. E. (2000). 
         PhysioBank, PhysioToolkit, and PhysioNet: Components of a new research resource for complex physiologic signals. 
         Circulation [Online]. 101 (23), pp. e215–e220. RRID:SCR_007345. 
